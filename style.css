@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('./img.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    /* padding-right: 50px; */
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 40px;
+
+}
+nav ul li a{
+    /* margin: 40px; */
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+}
+nav ul li button{
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.comp-name a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: yellow;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+nav ul li button:hover{
+    color: aqua;
+}
+/* 2  */
+.login-page{
+    display: none;
+}
+.form-box{
+    height: 480px;
+    width: 380px;
+    margin: 1% auto;
+    padding: 30px;
+    background: rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+.button-box{
+    width: 180px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    position: relative;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.3);
+}
+.toggle-btn{
+    margin: 9px;
+    padding-left: 20px;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+#btn{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90px;
+    border-radius: 30px;
+    background:  rgba(0,0,0,0.3);
+    transition: .5s;
+    border: 1px solid black;
+}
+.input-login-group{
+    transition: .5s;
+}
+.input-register-group{
+    transition: .5s;
+}
+.input-field{
+    height: 45px;
+    width: 300px;
+    margin: 3px;
+    outline: none;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid gray;
+    background: transparent;
+}
+.check-box{
+    margin: 20px;
+}
+span{
+    color: white;
+}
+.submit-btn{
+    display: block;
+    /* margin: 50%; */
+    margin-left: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: yellow;
+}
+#login{
+    position: absolute;
+    left: 40px;
+}
+#login input{
+    color: white;
+    font-size: 15px;
+}
+#register{
+    position: absolute;
+    left: 450px;
+}
+#register input{
+    color: white;
+    font-size: 15px;
+}

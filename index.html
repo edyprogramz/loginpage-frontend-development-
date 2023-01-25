@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="nav-bar">
+            <div class="comp-name">
+                <a href="#">CompName</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><button type="button" class="login-btn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;">Login</button></li>
+                </ul>
+             </nav>
+        </div>
+<!-- 2  -->
+        <div class="login-page" id="login-form">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="submit" class="toggle-btn" onclick="login()">Login</button>
+                    <button type="submit" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                
+                <!-- login  -->
+                <form id="login" class="input-login-group">
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+
+                <!-- register  -->
+                <form id="register" class="input-register-group">
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    <input type="text" class="input-field" placeholder="Last Name" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" class="input-field" placeholder="Confirm Password" required>
+                    <input type="checkbox" class="check-box" required><span>I agree with Terms & Conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+<!-- 3  -->
+        <script>
+            var x=document.getElementById('login');
+            var y=document.getElementById('register');
+            var z=document.getElementById('btn');
+            function login(){
+                x.style.left='40px';
+                y.style.left='450px';
+                z.style.left='0px';
+            }
+            function register(){
+                x.style.left='450px';
+                y.style.left='40px';
+                z.style.left='90px';
+            }
+
+        </script>
+
+
+    </div>
+    
+</body>
+</html>
